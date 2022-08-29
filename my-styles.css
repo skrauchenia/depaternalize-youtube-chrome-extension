@@ -1,0 +1,20 @@
+/* suggestions on the main page */
+#contents.ytd-rich-grid-renderer {
+  display: none !important;
+}
+
+/* list of related videos on the right */
+#related {
+  display: none;
+}
+
+/* overlay with tiles of videos at the end of a video */
+.ytp-endscreen-content {
+  display: none;
+}
+
+/* video suggestion overlays at the end of a video */
+/* channel element overlay at the end of a video */
+.ytp-ce-element {
+  display: none !important;
+}

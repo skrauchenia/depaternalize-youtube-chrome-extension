@@ -1,0 +1,28 @@
+{
+  "name": "Depaternalize youtube",
+  "description": "Extension which removes youtube suggestions from the main page and related videos from the right. It allows you to avoid of being paternalized by youtube's recommendation algorithms",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/z16.png",
+      "32": "/images/z32.png",
+      "48": "/images/z48.png",
+      "128": "/images/z128.png"
+    }
+  },
+  "content_scripts": [
+   {
+     "matches": ["https://www.youtube.com/*"],
+     "css": ["my-styles.css"]
+   }
+ ],
+  "icons": {
+    "16": "/images/z16.png",
+    "32": "/images/z32.png",
+    "48": "/images/z48.png",
+    "128": "/images/z128.png"
+  }
+}
